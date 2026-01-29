@@ -16,7 +16,7 @@
 # }
 data "template_cloudinit_config" "this" {
   gzip          = false
-  base64_encode = true
+  base64_encode = false
 
   part {
     content_type = "text/cloud-config"
